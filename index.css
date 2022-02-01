@@ -1,0 +1,25 @@
+@import url('./CSS/Principal.css');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.back{
+  background-color: aquamarine;
+}
+.center{
+  text-align: center;
+}
+.border{
+  margin: .5em;
+  width: 100%;
+  border: 1px solid rgb(134, 3, 3);
+}
