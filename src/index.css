@@ -1,4 +1,5 @@
 @import url('./CSS/Principal.css');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,14 +13,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .back{
-  background-color: aquamarine;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 26%, rgba(0,212,255,1) 100%);
 }
+
 .center{
   text-align: center;
 }
+
 .border{
   margin: .5em;
   width: 100%;
-  border: 1px solid rgb(134, 3, 3);
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow:
+       inset 0 -3em 3em rgba(132, 0, 255, 0.377),
+             0.3em 0.3em 1em rgba(255, 115, 115, 0.3);
+}
+.allscreen{
+  width: 100%;
+  height: 100%;
+
+}
+body{
+  background-color: #020024;
+}
+h3{
+  margin-top:0px;
+
+}
+
+@media (max-width: 800px) {
+  .Home {
+    flex-direction: column;
+    width: 86%;
+  }
 }

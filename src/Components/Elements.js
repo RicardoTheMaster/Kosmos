@@ -23,10 +23,13 @@ export const Elements = ({Estado,setEstado}) => {
       case 'Options': return <div className='align padding-y' key={_uid}>
                                   <label className='padding-x'>{label}:</label>
                                   <button className='margin-x btn-add' onClick={()=>{AddElement(Elemento)}}>+</button>
-                                  <div className='center'>
+                                  <div className='row'>
                                   {opts.map((opt)=><>
-                                      <label>{opt}</label>
+                                     <div>
+                    
                                       <input type={type} name='opt' key={opt} disabled value={opt}/>
+                                      <label>{opt}</label>
+                                      </div>
                                       </>)}
                                   </div>
                               </div>
@@ -45,8 +48,8 @@ export const Elements = ({Estado,setEstado}) => {
 }
 
   return <div className='border'>
-    <h4 className='center'> Selecciona los elementos de tu formulario </h4>   
-    <div className='column'>
+    <h4 className='center subtittle'> Selecciona los elementos de tu formulario </h4>   
+    <div className='column text'>
     {Object.values(fields).map((field)=>getElement(field)
         )
 

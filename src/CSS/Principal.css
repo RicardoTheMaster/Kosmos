@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@336&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
 .Home{
     margin: 1em;
     padding: .5em;
-    background-color: rgb(133, 255, 255);
     display: flex;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: space-around;
-
+    color: white;
 }
 
 .padding-y{
@@ -26,14 +28,93 @@
 .text-end{
     text-align: end;
 }
+
 .btn-add{
-    background-color: rgb(241, 121, 241);
+    width: 25px;
+    height: 25px;
+    background-color: rgb(33, 247, 129);
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    border: 1px solid blueviolet;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 .btn-add:hover{
-    background-color: rgba(241, 121, 241, 0.37);
+    background-color: rgba(33, 247, 129, 0.514);
     cursor: pointer;
+}
+.btn-add:focus{
+    border: 1px solid red;
+}
+
+
+.btn-rem{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(247, 94, 33);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+.btn-rem:hover{
+    background-color: rgba(247, 94, 33, 0.473);
+    cursor: pointer;
+}
+.btn-rem:focus{
+    border: 1px solid rgb(0, 255, 128);
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.tittle{
+    font-family: 'Quintessential', cursive;
+    font-size: 28px;
+}
+.subtittle{
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+.text{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12;
+}
+
+input,select{
+    font-family: 'Cormorant Garamond', serif;
+    border  : none;
+    padding : 5px;
+    font-weight: bold;
+  
+}
+button{
+    box-shadow: 0 8px 16px 0 rgba(0, 4, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.329);
+}
+
+.animate-in{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
 }
